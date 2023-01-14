@@ -1,0 +1,14 @@
+name: Allstate_Claim_Prediction_Challenge
+title: Allstate_Claim_Prediction_Challenge
+username:
+account: mm6iv5-vladimir-burlay
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7942585
+bundleId: 6672688
+url: https://mm6iv5-vladimir-burlay.shinyapps.io/Allstate_Claim_Prediction_Challenge/
+when: 1672011309.26685
+lastSyncTime: 1672011309.26685
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|Statistik/.Rhistory|Statistik/ml_model(gbm+rf+nn).R|Statistik/Stat-sample_test.R|Statistik/stat_model.R
