@@ -1,6 +1,6 @@
 # **Caravan insurance** 
 > A study of the customer database for the purpose of finding and analyzing the potential customers
----
+
 ## Table of Contents
 * [Genelal Info](#general-nformation)
 * [Technologies Used](#technologies-used)
