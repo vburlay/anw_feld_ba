@@ -39,7 +39,7 @@
 |Decision Tree Classifier  |  0,96     |   0,91    |
 |Decision Tree Classifier  |  0,99    |   0,94    |
 |Decision Tree Classifier  |  0,94     |   0,94    |
----
+
 
 * **CNN**
 
