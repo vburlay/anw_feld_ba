@@ -42,11 +42,14 @@
 ---
 
 * **CNN**
+
 ![image3](https://github.com/vburlay/anw_feld_ba/raw/main/images/model.PNG ) 
 
 * **CNN (Evaluation)**
 ![image4](https://github.com/vburlay/anw_feld_ba/raw/main/images/evaluation.PNG ) 
 
+* **KMeans**
+![image2](https://github.com/vburlay/anw_feld_ba/raw/main/images/clusters.PNG ) 
 ## Setup
 You can install the package as follows:
 ```r
