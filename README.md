@@ -41,10 +41,6 @@
 |Decision Tree Classifier  |  0,94     |   0,94    |
 ---
 
-* **KMeans**
-
-
-
 * **CNN**
 ![image3](https://github.com/vburlay/anw_feld_ba/raw/main/images/model.PNG ) 
 ![image4](https://github.com/vburlay/anw_feld_ba/raw/main/images/evaluation.PNG ) 
