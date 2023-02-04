@@ -41,7 +41,7 @@
 |Decision Tree Classifier  |  0,94     |   0,94    |
 
 
-* **CNN**
+* **CNN (Architecture)**
 
 ![image3](https://github.com/vburlay/anw_feld_ba/raw/main/images/model.PNG ) 
 
