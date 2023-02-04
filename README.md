@@ -29,7 +29,7 @@
 - Deep Learning (CNN)
 
 ## Screenshots
-+ **ROC (KMeans + Logistic regression )** 
+* **ROC (KMeans + Logistic regression )** 
 ![image](https://github.com/vburlay/anw_feld_ba/raw/main/images/roc.PNG ) 
 
 | Architecture    |Accuracy of Training data   |Accuracy of Training data  |
@@ -41,11 +41,11 @@
 |Decision Tree Classifier  |  0,94     |   0,94    |
 ---
 
-+ **KMeans**
+* **KMeans**
 ![image2](https://github.com/vburlay/anw_feld_ba/raw/main/images/clusters.PNG ) 
 
 
-+ **CNN**
+* **CNN**
 ![image3](https://github.com/vburlay/anw_feld_ba/raw/main/images/model.PNG ) 
 ![image4](https://github.com/vburlay/anw_feld_ba/raw/main/images/evaluation.PNG ) 
 
