@@ -1,4 +1,5 @@
 # **Caravan insurance** 
+![image](https://github.com/vburlay/anw_feld_ba/raw/main/images/caravan.PNG ) 
 > A study of the customer database for the purpose of finding and analyzing the potential customers
 
 ## Table of Contents
@@ -10,35 +11,40 @@
 * [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
+
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+> In this project, a major goal was to create a current model. This current model should help to give the answers to two research questions. On the one hand, the model should identify the "potential customers", on the other hand, it should find a group of similar customers.
+ > Data set: "Caravan Insurance Challenge" comes from Kaggle [_here_](https://www.kaggle.com/datasets/uciml/caravan-insurance-challenge).
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- Python - version 3.8.0
+- Jupyter notebook - version 1.0
 
 
 ## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
-
+- Machine Learning (Logistic regression, Decision Tree, Random Forest, SVC, KNN, PCA, Clustering)
+- Deep Learning (CNN)
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
++ **KMeans + Logistic regression**
+![image](https://github.com/vburlay/anw_feld_ba/raw/main/images/roc.PNG ) 
 
+| Architecture    |Accuracy of Training data   |Accuracy of Training data  |
+|-----------|:-----:| -----:|
+|Decision Tree Classifier  |  0,96     |   0,91    |
+|Random Forest Classifier  |  0,95     |   0,94    |
+|Decision Tree Classifier  |  0,96     |   0,91    |
+|Decision Tree Classifier  |  0,99    |   0,94    |
+|Decision Tree Classifier  |  0,94     |   0,94    |
+
++ **KMeans**
+![image](https://github.com/vburlay/anw_feld_ba/raw/main/images/clusters.PNG ) 
++ CNN
+![image](https://github.com/vburlay/anw_feld_ba/raw/main/images/model.PNG ) 
+![image](https://github.com/vburlay/anw_feld_ba/raw/main/images/evaluation.PNG ) 
 
 ## Setup
 What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
@@ -69,23 +75,8 @@ To do:
 - Feature to be added 2
 
 
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
-
-
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [Vladimir Burlay](wladimir.burlay@gmail.com) - feel free to contact me!
 
 
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
-| Tables    |Are    |Cool   |
-|-----------|:-----:| -----:|
-|col 3 is   |       |       |
 
