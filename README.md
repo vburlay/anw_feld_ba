@@ -42,7 +42,7 @@
 ---
 
 * **KMeans**
-![image2](https://github.com/vburlay/anw_feld_ba/raw/main/images/clusters.PNG ) 
+
 
 
 * **CNN**
