@@ -39,7 +39,7 @@
 |Support Vector Machines  |  0,96     |   0,91    |
 |K-Nearest Neighbors  |  0,99    |   0,94    |
 |Logistic Regression  |  0,94     |   0,94    |
-|CNN |  0,94     |   0,94    |
+|Convolutional neural network (CNN) |  0,94     |   0,94    |
 
 
 * **CNN (Architecture)**
