@@ -32,13 +32,14 @@
 * **ROC (KMeans + Logistic regression )** 
 ![image](https://github.com/vburlay/anw_feld_ba/raw/main/images/roc.PNG ) 
 
-| Architecture    |Accuracy of Training data   |Accuracy of Training data  |
+| Architecture    |Accuracy of Training data   |Accuracy of Test data  |
 |-----------|:-----:| -----:|
 |Decision Tree Classifier  |  0,96     |   0,91    |
 |Random Forest Classifier  |  0,95     |   0,94    |
-|Decision Tree Classifier  |  0,96     |   0,91    |
-|Decision Tree Classifier  |  0,99    |   0,94    |
-|Decision Tree Classifier  |  0,94     |   0,94    |
+|Support Vector Machines  |  0,96     |   0,91    |
+|K-Nearest Neighbors  |  0,99    |   0,94    |
+|Logistic Regression  |  0,94     |   0,94    |
+|CNN |  0,94     |   0,94    |
 
 
 * **CNN (Architecture)**
