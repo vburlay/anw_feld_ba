@@ -1,0 +1,19 @@
+import sys
+from pathlib import Path
+
+sys.path.append('/src')
+from src.example_package_anw.example import *
+
+
+def main():
+    dat = source_date(path)
+    print(pd.DataFrame(dat,
+                       columns=["ORIGIN",
+                                "MOSTYPE",
+                                "MAANTHUI",
+                                "MGEMOMV"] ).head())
+
+if __name__ == '__main__':
+    path_dir = str(Path(__file__).resolve().parent.parent)
+    path = path_dir + '\date\caravan-insurance-challenge.csv'
+    main()
