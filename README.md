@@ -31,7 +31,9 @@
 ## Screenshots
 * **ROC (KMeans + Logistic regression )** 
 ![image](https://github.com/vburlay/anw_feld_ba/raw/main/images/roc.PNG ) 
-
+* **Accuracy, Sensitivity & Specificity for different cut off points** 
+![image](https://github.com/vburlay/anw_feld_ba/raw/main/images/eval.PNG ) 
+* 
 | Architecture    |Accuracy of Training data   |Accuracy of Test data  |
 |-----------|:-----:| -----:|
 |Decision Tree Classifier  |  0,96     |   0,91    |
