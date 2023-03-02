@@ -3,11 +3,12 @@ import numpy as np
 from sklearn import preprocessing
 from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import  cross_val_predict
+from sklearn.model_selection import cross_val_predict
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve
 import seaborn as sns
 from sklearn import metrics
+
 
 def source_date(path_to_file):
     data = pd.read_csv(path_to_file)
@@ -54,6 +55,17 @@ def pca_date(X_train, X_test):
 
 
 def ml_model(X_train_reduced, X_test_reduced, X_train, X_test, y_train, y_test, train_components):
+    """
+
+    :param X_train_reduced:
+    :param X_test_reduced:
+    :param X_train:
+    :param X_test:
+    :param y_train:
+    :param y_test:
+    :param train_components:
+    :return:
+    """
     log_reg = LogisticRegression(multi_class='ovr',
                                  class_weight=None,
                                  solver='saga',
@@ -97,12 +109,17 @@ def ml_model(X_train_reduced, X_test_reduced, X_train, X_test, y_train, y_test, 
     confusion_matrix = metrics.confusion_matrix(y_pred_final.Yes, y_pred_final.predicted)
     Probability[Probability["Probability"] == 0.1]
 
-    return log_reg # Die Genauigkeit für den Testdatensatz
+    return y_pred_final  # Die Genauigkeit für den Testdatensatz
 
 
+def roc(log_reg, X_train_reduced, y_train):
+    """
 
-
-def roc(log_reg,X_train_reduced,y_train):
+    :param log_reg:
+    :param X_train_reduced:
+    :param y_train:
+    :return:
+    """
     y_probas_log_reg = cross_val_predict(log_reg, X_train_reduced, y_train, cv=3, method="predict_proba")
     probs_lr = y_probas_log_reg[:, 1]
     fpr, tpr, thresholds = roc_curve(y_train, probs_lr)
@@ -118,6 +135,11 @@ def roc(log_reg,X_train_reduced,y_train):
 
 
 def cor(X_train_reduced):
+    """
+
+    :param X_train_reduced:
+    :return:
+    """
     # Check the correlations between components
     corr_mat = np.corrcoef(X_train_reduced.transpose())
     plt.figure(figsize=[15, 8])

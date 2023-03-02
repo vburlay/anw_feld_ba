@@ -9,7 +9,7 @@ def main():
     dat = source_date(path)
     X_train, y_train, X_test, y_test = train_test_dat(dat)
     X_train_reduced, X_test_reduced, train_components, test_components = pca_date(X_train, X_test)
-    log_reg = ml_model(X_train_reduced, X_test_reduced, X_train, X_test, y_train, y_test, train_components)
+    y_pred_final  = ml_model(X_train_reduced, X_test_reduced, X_train, X_test, y_train, y_test, train_components)
 #    roc(log_reg, X_train_reduced, y_train) # ROC
 #    cor(X_train_reduced) # Check the correlations between components
 
