@@ -3,7 +3,7 @@ import numpy as np
 from sklearn import preprocessing
 from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import cross_val_score, cross_val_predict
+from sklearn.model_selection import  cross_val_predict
 import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve
 import seaborn as sns
