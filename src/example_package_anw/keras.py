@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.model_selection import KFold
 
-
 class model_cnn:
     def __init__(self, x_traincnn, x_testcnn, y_train, y_test):
         self.x_traincnn = x_traincnn
@@ -50,7 +49,7 @@ class model_cnn:
             print('------------------------------------------------------------------------')
             print(f'Training for fold {fold_no} ...')
             self.cnnhistory = model.fit(self.inputs[train], self.targets[train], batch_size=16,
-                                   epochs=100, validation_data=(self.x_testcnn, self.y_test))
+                                        epochs=100, validation_data=(self.x_testcnn, self.y_test))
 
             # Generate generalization metrics
             scores = model.evaluate(self.inputs[test], self.targets[test], verbose=0)
