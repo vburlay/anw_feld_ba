@@ -1,8 +1,8 @@
 from keras.models import Sequential
 import keras
 from keras.layers import Dense
-from keras.layers import Input, Flatten, Dropout, Activation
-from keras.layers import Conv1D, MaxPooling1D, AveragePooling1D
+from keras.layers import Flatten, Dropout, Activation
+from keras.layers import Conv1D, MaxPooling1D
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.model_selection import KFold
