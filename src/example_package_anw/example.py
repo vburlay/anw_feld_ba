@@ -54,7 +54,7 @@ def pca_date(X_train, X_test):
     return X_train_reduced, X_test_reduced, train_components, test_components
 
 
-def ml_model(X_train_reduced, X_test_reduced, X_train, X_test, y_train, y_test, train_components):
+def ml_model(X_train_reduced, X_test_reduced,  y_train, y_test, train_components):
     """
 
     :param X_train_reduced:
@@ -72,7 +72,7 @@ def ml_model(X_train_reduced, X_test_reduced, X_train, X_test, y_train, y_test, 
                                  max_iter=10000)
     log_reg.fit(X_train_reduced, y_train)
     log_reg.predict(X_test_reduced)
-    eval = log_reg.score(X_test_reduced, y_test)
+#    eval = log_reg.score(X_test_reduced, y_test)
 
     probs = log_reg.predict_proba(X_test_reduced)
     y_pred_df = pd.DataFrame(probs)
@@ -109,7 +109,7 @@ def ml_model(X_train_reduced, X_test_reduced, X_train, X_test, y_train, y_test, 
     confusion_matrix = metrics.confusion_matrix(y_pred_final.Yes, y_pred_final.predicted)
     Probability[Probability["Probability"] == 0.1]
 
-    return y_pred_final  # Die Genauigkeit für den Testdatensatz
+    return y_pred_final, log_reg  # Die Genauigkeit für den Testdatensatz
 
 
 def roc(log_reg, X_train_reduced, y_train):
