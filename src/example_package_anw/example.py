@@ -71,7 +71,7 @@ def ml_model(X_train_reduced, X_test_reduced,  y_train, y_test, train_components
                                  solver='saga',
                                  max_iter=10000)
     log_reg.fit(X_train_reduced, y_train)
-    log_reg.predict(X_test_reduced)
+#    log_reg.predict(X_test_reduced)
 #    eval = log_reg.score(X_test_reduced, y_test)
 
     probs = log_reg.predict_proba(X_test_reduced)
@@ -106,7 +106,7 @@ def ml_model(X_train_reduced, X_test_reduced,  y_train, y_test, train_components
     Probability.plot.line(x='Probability', y=['Accuracy', 'Sensitivity', 'Specificity'])
 
     y_pred_final['predicted'] = y_pred_final.Yes_Prob.map(lambda x: 1 if x > 0.1 else 0)
-    confusion_matrix = metrics.confusion_matrix(y_pred_final.Yes, y_pred_final.predicted)
+#    confusion_matrix = metrics.confusion_matrix(y_pred_final.Yes, y_pred_final.predicted)
     Probability[Probability["Probability"] == 0.1]
 
     return y_pred_final, log_reg  # Die Genauigkeit für den Testdatensatz
