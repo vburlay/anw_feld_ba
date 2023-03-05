@@ -35,13 +35,24 @@ if add_selectbox  == "Application start" :
 
     tab1, tab2, tab3 = st.tabs(["Countplot of the results", "Result Tabular","Individual results"])
     with tab1:
-        fig = px.bar(data_ml['Yes_Prob'],width=1000,height=500)
-        st.plotly_chart(fig)
+        if add_radio == "Logistic Regression":
+            fig = px.bar(data_ml['Yes_Prob'],width=1000,height=500)
+            st.plotly_chart(fig)
+        elif add_radio == "Keras":
+            fig = px.bar(data_dl['Yes_Prob'], width=1000, height=500)
+            st.plotly_chart(fig)
     with tab2:
-        fig = px.scatter(data_ml.drop(columns=['ID']), width=1000, height=650)
-        st.plotly_chart(fig)
+        if add_radio == "Logistic Regression":
+            fig = px.scatter(data_ml.drop(columns=['ID']), width=1000, height=650)
+            st.plotly_chart(fig)
+        elif add_radio == "Keras":
+            fig = px.scatter(data_dl.drop(columns=['ID']), width=1000, height=650)
+            st.plotly_chart(fig)
         with tab3:
-            st.dataframe(data_ml,width=1200,height=600)
+            if add_radio == "Logistic Regression":
+                st.dataframe(data_ml,width=1200,height=600)
+            elif add_radio == "Keras":
+                st.dataframe(data_dl, width=1200, height=600)
 
 
 elif add_selectbox == "Show the source code":
