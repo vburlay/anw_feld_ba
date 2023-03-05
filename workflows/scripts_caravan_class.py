@@ -23,9 +23,10 @@ def probability(probs, y_test):
     y_pred_final = y_pred_final.reindex(["ID", "Yes", "Yes_Prob"], axis=1)
 
     numbers = [float(x) / 10 for x in range(10)]
+    y_pred_final['predicted'] = y_pred_final.Yes_Prob.map(lambda x: 1 if x > 0.1 else 0)
     for i in numbers:
         y_pred_final[i] = y_pred_final.Yes_Prob.map(lambda x: 1 if x > i else 0)
-        y_pred_final['predicted'] = y_pred_final.Yes_Prob.map(lambda x: 1 if x > 0.1 else 0)
+
     return y_pred_final
 
 
