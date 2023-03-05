@@ -10,7 +10,7 @@ import plotly.express as px
 import urllib
 
 def get_file_content_as_string(path):
-    url = 'https://raw.githubusercontent.com/vburlay/anw_feld_ba/main/workflow/' + path
+    url = 'https://raw.githubusercontent.com/vburlay/anw_feld_ba/main/workflows/' + path
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
 
