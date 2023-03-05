@@ -27,7 +27,7 @@ with st.sidebar:
         ("Logistic Regression", "Keras")   )
 
 
-if add_selectbox  == "Application start" and add_radio == "Pytorch (ResNet34)":
+if add_selectbox  == "Application start" :
     lg_pred, dl_pred = scripts_caravan_class.main()
     data_ml = pd.DataFrame(data = lg_pred)
     data_dl = pd.DataFrame(data = dl_pred)
