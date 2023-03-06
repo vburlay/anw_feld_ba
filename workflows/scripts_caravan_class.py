@@ -34,9 +34,9 @@ def ml(X_test, y_test):
     mm_scale = preprocessing.MinMaxScaler()
     X_test[X_test.columns] = mm_scale.fit_transform(X_test[X_test.columns])
 
-    path_dir = str(Path(__file__).resolve().parent.parent)
-    path_model = os.path.join(path_dir, 'tests\models\ml_model.sav')
-
+ #   path_dir = str(Path(__file__).resolve().parent.parent)
+ #   path_model = os.path.join(path_dir, 'tests\models\ml_model.sav')
+    path_model = 'models/ml_model.sav'
     if os.path.isfile(path_model):  #
         reg = joblib.load(path_model)
 
@@ -51,8 +51,9 @@ def ml(X_test, y_test):
 
 
 def dl(X_test, y_test):
-    path_dir = str(Path(__file__).resolve().parent.parent)
-    path_model = os.path.join(path_dir, 'tests\models\cnn_model.h5')
+#    path_dir = str(Path(__file__).resolve().parent.parent)
+#    path_model = os.path.join(path_dir, 'tests\models\cnn_model.h5')
+    path_model ='models/cnn_model.h5'
 
     if os.path.isfile(path_model):  #
         x_testcnn = np.expand_dims(X_test, axis=(2))
@@ -66,7 +67,8 @@ def dl(X_test, y_test):
 
 def main():
     path_dir = str(Path(__file__).resolve().parent.parent)
-    path_to_file = path_dir + '\date\caravan-insurance-challenge.csv'
+#    path_to_file = path_dir + '\date\caravan-insurance-challenge.csv'
+    path_to_file = 'https://raw.githubusercontent.com/vburlay/anw_feld_ba/main/date/caravan-insurance-challenge.csv'
     data = pd.read_csv(path_to_file)
 
     test = data[data['ORIGIN'] == 'test']
