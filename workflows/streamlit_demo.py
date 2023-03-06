@@ -34,7 +34,6 @@ def probability(probs, y_test):
     y_pred_final['predicted'] = y_pred_final.Yes_Prob.map(lambda x: 1 if x > 0.1 else 0)
     for i in numbers:
         y_pred_final[i] = y_pred_final.Yes_Prob.map(lambda x: 1 if x > i else 0)
-
     return y_pred_final
 
 
@@ -54,7 +53,6 @@ def ml(X_test, y_test):
 
     probs = reg.predict_proba(X_test_reduced)
     y_ml_pred = probability(probs, y_test)
-
     return y_ml_pred
 
 
@@ -74,7 +72,7 @@ def dl(X_test, y_test):
 
 
 def main():
-    path_dir = str(Path(__file__).resolve().parent.parent)
+#    path_dir = str(Path(__file__).resolve().parent.parent)
 #    path_to_file = path_dir + '\date\caravan-insurance-challenge.csv'
     path_to_file = 'https://raw.githubusercontent.com/vburlay/anw_feld_ba/main/date/caravan-insurance-challenge.csv'
     data = pd.read_csv(path_to_file)
