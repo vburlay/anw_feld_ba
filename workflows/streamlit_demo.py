@@ -1,6 +1,3 @@
-# **Caravan insurancen** 
- 
-```r
 """
 Created on Sat March 05 14:55:49 2023
 
