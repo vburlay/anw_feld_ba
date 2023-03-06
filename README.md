@@ -1,7 +1,7 @@
 # **Caravan insurance** 
 ![image](https://github.com/vburlay/anw_feld_ba/raw/main/images/caravan.PNG ) 
 > A study of the customer database for the purpose of finding and analyzing the potential customers
-
+> Live demo [_here_](https://vburlay-anw-feld-ba-workflowsstreamlit-demo-60fscu.streamlit.app/).
 ## Table of Contents
 * [Genelal Info](#general-nformation)
 * [Technologies Used](#technologies-used)
@@ -16,7 +16,7 @@
 
 ## General Information
 > In this project, a major goal was to create a current model. This current model should help to give the answers to two research questions. On the one hand, the model should identify the "potential customers", on the other hand, it should find a group of similar customers.
- > Data set: "Caravan Insurance Challenge" comes from Kaggle [_here_](https://www.kaggle.com/datasets/uciml/caravan-insurance-challenge).
+> Data set: "Caravan Insurance Challenge" comes from Kaggle [_here_](https://www.kaggle.com/datasets/uciml/caravan-insurance-challenge).
 
 
 ## Technologies Used
