@@ -1,0 +1,13 @@
+streamlit==1.18.0
+urllib3==1.26.4
+streamlit_imagegrid
+requests==2.25.1
+numpy
+pandas
+plotly
+joblib==1.0.1
+scikit-learn
+keras
+
+
+
